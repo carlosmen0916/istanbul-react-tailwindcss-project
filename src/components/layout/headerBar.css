@@ -1,0 +1,28 @@
+.header-bar-height {
+  height: 50vh;
+}
+/* #headerBar {
+  height: 112px;
+  display: flex;
+} */
+.title {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+}
+.my-text-center {
+  text-align: justify;
+}
+#header-bar-title {
+  background-color: #5dbe79;
+}
+ul {
+  padding-left: 40%;
+}
+
+input[type="search"] {
+  border: 1px solid white;
+}
+/* .inputIcon {
+  background-image: url("./Vector.png");
+} */

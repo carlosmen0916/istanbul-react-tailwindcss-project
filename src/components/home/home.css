@@ -1,0 +1,14 @@
+.custom-text {
+  margin-left: -120px;
+}
+
+@media only screen and (max-width: 1025px) {
+  .custom-text {
+    margin-left: -74px;
+  }
+}
+@media only screen and (max-width: 765px) {
+  .custom-text {
+    margin-left: -34px;
+  }
+}

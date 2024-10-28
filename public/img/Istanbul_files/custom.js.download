@@ -1,0 +1,97 @@
+
+window.onscroll = function () {
+    myFunction()
+};
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+};
+$('.owl-carousel1').owlCarousel({
+    loop: true,
+    margin: 15,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+    dots: false,
+    nav: true,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        400: {
+            items: 2,
+        },
+        700: {
+            items: 3,
+        },
+        1000: {
+            items: 4,
+        },
+        1200: {
+            items: 4,
+            margin: 30,
+        }
+    }
+});
+$('.owl-carousel2').owlCarousel({
+    loop: true,
+    margin: 10,
+    dots: false,
+    nav: true,
+    items: 1,
+    autoHeight: true
+});
+$('.owl-carousel3').owlCarousel({
+    loop: true,
+    margin: 10,
+    dots: true,
+    nav: true,
+    autoplay:true,
+autoplayTimeout:1000,
+autoplayHoverPause:true,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 1,
+            dots: false,
+        },
+        400: {
+            items: 2,
+            dots: false,
+        },
+        600: {
+            items: 3,
+
+        },
+        991: {
+            items: 4,
+
+        },
+        1000: {
+            items: 4,
+        }
+    }
+});
+$('.owl-carousel4').owlCarousel({
+    loop: true,
+    margin: 10,
+    dots: false,
+    nav: true,
+    items: 1,
+});
+var offset = $('section').offset();
+var scrollto = offset.top - 60; // minus fixed header height
+$('html, body').animate({scrollTop:scrollto}, 0);
+
+window.onPlayerInit = () => {
+    const preview = document.querySelector('.preview');
+    preview && preview.classList.add('hidden');
+    window.parent.postMessage({ wave_player_status: 'ready' }, '*');
+  };
